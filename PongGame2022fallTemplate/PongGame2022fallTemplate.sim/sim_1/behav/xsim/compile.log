@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTClock2022Template.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTClock2022fallTemplate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTcontroller2022fall
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/FallingEdgePositiveOneShot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FallingEdgePositiveOneShot
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UniversalCounter2022fall
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/hsyncModule2022fall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hsyncModule2022fall
+INFO: [VRFC 10-2458] undeclared symbol PixelClockOneShot, assumed default net type wire [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/hsyncModule2022fall.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/vsyncModule2022fallTemplate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vsyncModule2022fallTemplate
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sim_1/imports/Term Project SourceFiles Folder/CRTcontrollerr2022fall_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CRTcontroller2022fall_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

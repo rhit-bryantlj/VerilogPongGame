@@ -1,0 +1,184 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Oct 26 12:51:40 2022
+# Process ID: 11284
+# Current directory: C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19840 C:\Xilinx\VivadoECE433Fall2022TermProject\pong_games_fall2022\PongGame2022fallTemplate\PongGame2022fallTemplate.xpr
+# Log file: C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/vivado.log
+# Journal file: C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 938.410 ; gain = 279.469
+update_compile_order -fileset sources_1
+set_property top PongGame2022fallTemplate [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: PongGame2022fallTemplate
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [Synth 8-2507] parameter declaration becomes local in CRTcontroller2022fall with formal parameter declaration list [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v:28]
+WARNING: [Synth 8-2507] parameter declaration becomes local in CRTcontroller2022fall with formal parameter declaration list [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v:34]
+WARNING: [Synth 8-2507] parameter declaration becomes local in UniversalCounter2022fall with formal parameter declaration list [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v:14]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1459.422 ; gain = 229.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PongGame2022fallTemplate' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/PongGame2022fallTemplate.v:15]
+	Parameter NumberofPixels bound to: 10'b1010000000 
+	Parameter NumberofLines bound to: 10'b0111100000 
+	Parameter SystemClock bound to: 10'b0001100100 
+	Parameter CRTClock bound to: 10'b0000011001 
+INFO: [Synth 8-6157] synthesizing module 'CRTcontroller2022fall' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v:17]
+	Parameter ResolutionSize bound to: 10 - type: integer 
+	Parameter SystemClockSize bound to: 10 - type: integer 
+	Parameter vSynchPulse bound to: 10'b0000000001 
+	Parameter vFrontPorch bound to: 10'b0000000010 
+	Parameter vBackPorch bound to: 10'b0000000011 
+	Parameter hSynchPulse bound to: 10'b0000000010 
+	Parameter hFrontPorch bound to: 10'b0000000001 
+	Parameter hBackPorch bound to: 10'b0000000001 
+INFO: [Synth 8-6157] synthesizing module 'hsyncModule2022fall' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/hsyncModule2022fall.v:13]
+	Parameter xresolution bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FallingEdgePositiveOneShot' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/FallingEdgePositiveOneShot.v:7]
+	Parameter Initial bound to: 0 - type: integer 
+	Parameter OneShotState bound to: 1 - type: integer 
+	Parameter IdleState bound to: 2 - type: integer 
+	Parameter WaitState bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FallingEdgePositiveOneShot' (1#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/FallingEdgePositiveOneShot.v:7]
+INFO: [Synth 8-6157] synthesizing module 'UniversalCounter2022fall' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v:7]
+	Parameter length bound to: 10 - type: integer 
+	Parameter HOLD bound to: 2'b00 
+	Parameter UP bound to: 2'b01 
+	Parameter DOWN bound to: 2'b10 
+	Parameter LOAD bound to: 2'b11 
+WARNING: [Synth 8-5788] Register count_value_reg in module UniversalCounter2022fall is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'UniversalCounter2022fall' (2#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hsyncModule2022fall' (3#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/hsyncModule2022fall.v:13]
+INFO: [Synth 8-6157] synthesizing module 'vsyncModule2022fallTemplate' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/vsyncModule2022fallTemplate.v:12]
+	Parameter yresolution bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vsyncModule2022fallTemplate' (4#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/vsyncModule2022fallTemplate.v:12]
+INFO: [Synth 8-6157] synthesizing module 'CRTClock2022fallTemplate' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTClock2022Template.v:9]
+	Parameter SystemClockSize bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CRTClock2022fallTemplate' (5#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTClock2022Template.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CRTcontroller2022fall' (6#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v:17]
+INFO: [Synth 8-6157] synthesizing module 'game2022fallTemplate' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/Game2022fallTemplate.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'game2022fallTemplate' (7#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/Game2022fallTemplate.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'PongGame2022fallTemplate' (8#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/PongGame2022fallTemplate.v:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1507.078 ; gain = 276.941
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1507.078 ; gain = 276.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1507.078 ; gain = 276.941
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1507.078 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.117 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1660.973 ; gain = 430.836
+20 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1660.973 ; gain = 701.871
+set_property top CRTcontroller2022fall [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+WARNING: [Synth 8-2507] parameter declaration becomes local in UniversalCounter2022fall with formal parameter declaration list [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v:14]
+WARNING: [Synth 8-2507] parameter declaration becomes local in CRTcontroller2022fall with formal parameter declaration list [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v:28]
+WARNING: [Synth 8-2507] parameter declaration becomes local in CRTcontroller2022fall with formal parameter declaration list [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v:34]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1726.504 ; gain = 53.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CRTcontroller2022fall' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v:17]
+	Parameter ResolutionSize bound to: 10 - type: integer 
+	Parameter SystemClockSize bound to: 10 - type: integer 
+	Parameter vSynchPulse bound to: 10'b0000000001 
+	Parameter vFrontPorch bound to: 10'b0000000010 
+	Parameter vBackPorch bound to: 10'b0000000011 
+	Parameter hSynchPulse bound to: 10'b0000000010 
+	Parameter hFrontPorch bound to: 10'b0000000001 
+	Parameter hBackPorch bound to: 10'b0000000001 
+INFO: [Synth 8-6157] synthesizing module 'hsyncModule2022fall' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/hsyncModule2022fall.v:13]
+	Parameter xresolution bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FallingEdgePositiveOneShot' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/FallingEdgePositiveOneShot.v:7]
+	Parameter Initial bound to: 0 - type: integer 
+	Parameter OneShotState bound to: 1 - type: integer 
+	Parameter IdleState bound to: 2 - type: integer 
+	Parameter WaitState bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FallingEdgePositiveOneShot' (1#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/FallingEdgePositiveOneShot.v:7]
+INFO: [Synth 8-6157] synthesizing module 'UniversalCounter2022fall' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v:7]
+	Parameter length bound to: 10 - type: integer 
+	Parameter HOLD bound to: 2'b00 
+	Parameter UP bound to: 2'b01 
+	Parameter DOWN bound to: 2'b10 
+	Parameter LOAD bound to: 2'b11 
+WARNING: [Synth 8-5788] Register count_value_reg in module UniversalCounter2022fall is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'UniversalCounter2022fall' (2#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hsyncModule2022fall' (3#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/hsyncModule2022fall.v:13]
+INFO: [Synth 8-6157] synthesizing module 'vsyncModule2022fallTemplate' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/vsyncModule2022fallTemplate.v:12]
+	Parameter yresolution bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vsyncModule2022fallTemplate' (4#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/vsyncModule2022fallTemplate.v:12]
+INFO: [Synth 8-6157] synthesizing module 'CRTClock2022fallTemplate' [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTClock2022Template.v:9]
+	Parameter SystemClockSize bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CRTClock2022fallTemplate' (5#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTClock2022Template.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'CRTcontroller2022fall' (6#1) [C:/Xilinx/VivadoECE433Fall2022TermProject/pong_games_fall2022/PongGame2022fallTemplate/PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1750.539 ; gain = 77.754
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1773.473 ; gain = 100.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1773.473 ; gain = 100.688
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1773.473 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1870.738 ; gain = 197.953
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 26 13:22:06 2022...

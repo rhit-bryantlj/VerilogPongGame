@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTClock2022Template.v" \
+"../../../../PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v" \
+"../../../../PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/FallingEdgePositiveOneShot.v" \
+"../../../../PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v" \
+"../../../../PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/hsyncModule2022fall.v" \
+"../../../../PongGame2022fallTemplate.srcs/sources_1/imports/Term Project SourceFiles Folder/vsyncModule2022fallTemplate.v" \
+"../../../../PongGame2022fallTemplate.srcs/sim_1/imports/Term Project SourceFiles Folder/CRTcontrollerr2022fall_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
