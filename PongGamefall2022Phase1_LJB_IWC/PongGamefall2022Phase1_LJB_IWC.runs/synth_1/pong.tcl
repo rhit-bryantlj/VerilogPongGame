@@ -18,24 +18,28 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 3
+set_param synth.incrementalSynthesisCache C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/.Xil/Vivado-2724-RHIT-R90VFCAK/incrSyn
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.cache/wt [current_project]
-set_property parent.project_path C:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.xpr [current_project]
+set_property webtalk.parent_dir C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.cache/wt [current_project]
+set_property parent.project_path C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.cache/ip [current_project]
+set_property ip_output_repo c:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib C:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/sources_1/new/OriginalPongNexyzA7.v
-read_ip -quiet c:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/sources_1/ip/clk50Mhz/clk50Mhz.xci
-set_property used_in_implementation false [get_files -all c:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/sources_1/ip/clk50Mhz/clk50Mhz_board.xdc]
-set_property used_in_implementation false [get_files -all c:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/sources_1/ip/clk50Mhz/clk50Mhz.xdc]
-set_property used_in_implementation false [get_files -all c:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/sources_1/ip/clk50Mhz/clk50Mhz_ooc.xdc]
+read_verilog -library xil_defaultlib C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/sources_1/new/OriginalPongNexyzA7.v
+read_ip -quiet C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/sources_1/ip/clk50Mhz/clk50Mhz.xci
+set_property used_in_implementation false [get_files -all c:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/sources_1/ip/clk50Mhz/clk50Mhz_board.xdc]
+set_property used_in_implementation false [get_files -all c:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/sources_1/ip/clk50Mhz/clk50Mhz.xdc]
+set_property used_in_implementation false [get_files -all c:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/sources_1/ip/clk50Mhz/clk50Mhz_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -45,8 +49,8 @@ set_property used_in_implementation false [get_files -all c:/SeniorFallQuarter/A
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/PongGamePhase1fall2022_LJB_ICW/new/PongGamePhase1fall2022_LJB_IWC.xdc
-set_property used_in_implementation false [get_files C:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/PongGamePhase1fall2022_LJB_ICW/new/PongGamePhase1fall2022_LJB_IWC.xdc]
+read_xdc C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/PongGamePhase1fall2022_LJB_ICW/new/PongGamePhase1fall2022_LJB_IWC.xdc
+set_property used_in_implementation false [get_files C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/PongGamePhase1fall2022_LJB_ICW/new/PongGamePhase1fall2022_LJB_IWC.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

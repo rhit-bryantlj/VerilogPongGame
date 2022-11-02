@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/PongGamePhase1fall2022_LJB_ICW/new/PongGamePhase1fall2022_LJB_IWC.xdc rfile:../../../PongGamefall2022Phase1_LJB_IWC.srcs/PongGamePhase1fall2022_LJB_ICW/new/PongGamePhase1fall2022_LJB_IWC.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/PongGamePhase1fall2022_LJB_ICW/new/PongGamePhase1fall2022_LJB_IWC.xdc rfile:../../../PongGamefall2022Phase1_LJB_IWC.srcs/PongGamePhase1fall2022_LJB_ICW/new/PongGamePhase1fall2022_LJB_IWC.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN A3 [get_ports {red[0]}]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]

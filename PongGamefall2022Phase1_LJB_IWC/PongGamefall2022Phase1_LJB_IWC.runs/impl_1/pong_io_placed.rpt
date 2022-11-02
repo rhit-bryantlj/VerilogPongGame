@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date                      : Mon Oct 31 11:14:39 2022
+| Date                      : Wed Nov  2 08:42:27 2022
 | Host                      : RHIT-R90VFCAK running 64-bit major release  (build 9200)
 | Command                   : report_io -file pong_io_placed.rpt
 | Design                    : pong

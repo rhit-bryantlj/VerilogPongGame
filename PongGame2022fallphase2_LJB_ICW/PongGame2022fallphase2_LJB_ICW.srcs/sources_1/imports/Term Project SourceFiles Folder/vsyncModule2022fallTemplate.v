@@ -23,7 +23,7 @@ wire[yresolution-1:0] EndCount = SynchPulse+FrontPorch+ActiveVideo+BackPorch;
 assign EndYLine = ycount==EndCount;
 //synch pulse appears at the end of the line and after front porch to mimic the pong video_timer
 // ysync <= ~(ypos > 490 && ypos <=491); //
-assign vsync = ~(ycount>=(ActiveVideo+FrontPorch)&&ycount<=(ActiveVideo+FrontPorch+SynchPulse));
+assign vsync = ~(ycount>(ActiveVideo+FrontPorch)&&ycount<=(ActiveVideo+FrontPorch+SynchPulse));
 always@(*)
 yposition<=ycount; // game circuit does not work if ypos does not run from 0 to 
 //module UniversalCounter2022fall #(parameter length = 10) (

@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../PongGame2022fallphase2_LJB_ICW.srcs/sources_1/ip/clk_25MHz" \
+"../../../../PongGame2022fallphase2_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/FallingEdgePositiveOneShot.v" \
+"../../../../PongGame2022fallphase2_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v" \
+"../../../../PongGame2022fallphase2_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/vsyncModule2022fallTemplate.v" \
+"../../../../PongGame2022fallphase2_LJB_ICW.srcs/sim_1/imports/Term Project SourceFiles Folder/vsyncModule2022fall_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

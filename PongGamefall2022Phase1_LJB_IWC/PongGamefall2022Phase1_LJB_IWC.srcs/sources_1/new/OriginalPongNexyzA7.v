@@ -223,22 +223,21 @@ module pong(
     output hsync,
     output vsync
     );
-
+wire clk50;
+clk50Mhz SystemClockUnit(.clk_in100Mhz(clk100Mhz),.clk_out50Mhz(clk50),.locked(clockLocked));
 // divide input clock by two, and use a global 
 // clock buffer for the derived clock
-//reg clk25_int;
-//always @(posedge clk50) begin
-//	clk25_int <= ~clk25_int;
-//end
-
-wire clk50;
-//BUFG bufg_inst(clk25, clk25_int);
-clk50Mhz SystemClockUnit(.clk_in100Mhz(clk100Mhz),.clk_out50Mhz(clk50),.locked(clockLocked));
+reg clk25_int;
+always @(posedge clk50) begin
+	clk25_int <= ~clk25_int;
+end
+wire clk25;
+BUFG bufg_inst(clk25, clk25_int);
 
 wire [9:0] xpos;
 wire [9:0] ypos;
 
-video_timer video_timer_inst(clk50,reset, hsync, vsync, xpos, ypos);
-game game_inst(clk50, reset, xpos, ypos, rota, rotb, red, green, blue);
+video_timer video_timer_inst(clk25,reset, hsync, vsync, xpos, ypos);
+game game_inst(clk25, reset, xpos, ypos, rota, rotb, red, green, blue);
 					
 endmodule

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.runs/synth_1'
+HD_PWD='C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Nov  1 14:47:16 2022
+# Process ID: 24312
+# Current directory: C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6068 C:\SeniorFallQuarter\AdvVerilog\VerilogPongGame\PongGamefall2022Phase1_LJB_IWC\PongGamefall2022Phase1_LJB_IWC.xpr
+# Log file: C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/vivado.log
+# Journal file: C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.runs/impl_1/pong.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.runs/impl_1/pong.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.runs/impl_1/pong.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.runs/impl_1/pong.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+close_project
+create_project tempproj C:/SeniorFallQuarter/AdvVerilog/Projects/tempproj -part xc7a100tcsg324-1
+import_files -norecurse C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/sources_1/new/OriginalPongNexyzA7.v
+update_compile_order -fileset sources_1
+create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk50Mhz -dir c:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {clk50Mhz} CONFIG.PRIMARY_PORT {clk_in100Mhz} CONFIG.CLK_OUT1_PORT {clk_out50Mhz} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50} CONFIG.USE_RESET {false} CONFIG.MMCM_CLKOUT0_DIVIDE_F {20.000} CONFIG.CLKOUT1_JITTER {151.636}] [get_ips clk50Mhz]
+generate_target {instantiation_template} [get_files c:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.srcs/sources_1/ip/clk50Mhz/clk50Mhz.xci]
+generate_target all [get_files  c:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.srcs/sources_1/ip/clk50Mhz/clk50Mhz.xci]
+catch { config_ip_cache -export [get_ips -all clk50Mhz] }
+export_ip_user_files -of_objects [get_files c:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.srcs/sources_1/ip/clk50Mhz/clk50Mhz.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.srcs/sources_1/ip/clk50Mhz/clk50Mhz.xci]
+launch_runs -jobs 6 clk50Mhz_synth_1
+export_simulation -of_objects [get_files c:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.srcs/sources_1/ip/clk50Mhz/clk50Mhz.xci] -directory C:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.ip_user_files/sim_scripts -ip_user_files_dir C:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.ip_user_files -ipstatic_source_dir C:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.cache/compile_simlib/modelsim} {questa=C:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.cache/compile_simlib/questa} {riviera=C:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.cache/compile_simlib/riviera} {activehdl=C:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+add_files -fileset constrs_1 -norecurse C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/PongGamePhase1fall2022_LJB_ICW/new/PongGamePhase1fall2022_LJB_IWC.xdc
+import_files -fileset constrs_1 C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.srcs/PongGamePhase1fall2022_LJB_ICW/new/PongGamePhase1fall2022_LJB_IWC.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.runs/impl_1/pong.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/SeniorFallQuarter/AdvVerilog/Projects/tempproj/tempproj.runs/impl_1/pong.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager

@@ -2,11 +2,11 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Oct 31 11:14:14 2022
-# Process ID: 17852
-# Current directory: C:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.runs/impl_1
+# Start of session at: Wed Nov  2 08:43:28 2022
+# Process ID: 23188
+# Current directory: C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.runs/impl_1
 # Command line: vivado.exe -log pong.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pong.tcl -notrace
-# Log file: C:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.runs/impl_1/pong.vdi
-# Journal file: C:/SeniorFallQuarter/AdvVerilog/Projects/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.runs/impl_1\vivado.jou
+# Log file: C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.runs/impl_1/pong.vdi
+# Journal file: C:/SeniorFallQuarter/AdvVerilog/VerilogPongGame/PongGamefall2022Phase1_LJB_IWC/PongGamefall2022Phase1_LJB_IWC.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source pong.tcl -notrace
