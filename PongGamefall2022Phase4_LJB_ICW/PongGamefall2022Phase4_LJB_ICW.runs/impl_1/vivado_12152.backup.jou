@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Nov  7 10:57:52 2022
+# Process ID: 12152
+# Current directory: C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.runs/impl_1
+# Command line: vivado.exe -log PongGame2022fallTemplate.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PongGame2022fallTemplate.tcl -notrace
+# Log file: C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.runs/impl_1/PongGame2022fallTemplate.vdi
+# Journal file: C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source PongGame2022fallTemplate.tcl -notrace

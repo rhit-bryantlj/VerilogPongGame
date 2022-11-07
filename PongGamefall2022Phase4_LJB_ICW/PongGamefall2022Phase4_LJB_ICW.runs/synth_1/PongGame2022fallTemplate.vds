@@ -1,0 +1,449 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Nov  7 10:56:40 2022
+# Process ID: 4196
+# Current directory: C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.runs/synth_1
+# Command line: vivado.exe -log PongGame2022fallTemplate.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PongGame2022fallTemplate.tcl
+# Log file: C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.runs/synth_1/PongGame2022fallTemplate.vds
+# Journal file: C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PongGame2022fallTemplate.tcl -notrace
+Command: synth_design -top PongGame2022fallTemplate -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3768 
+WARNING: [Synth 8-2507] parameter declaration becomes local in CRTcontroller2022fall with formal parameter declaration list [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v:25]
+WARNING: [Synth 8-2507] parameter declaration becomes local in CRTcontroller2022fall with formal parameter declaration list [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v:31]
+WARNING: [Synth 8-6901] identifier 'increment_score' is used before its declaration [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/Game2022fallTemplate.v:112]
+WARNING: [Synth 8-6901] identifier 'increment_score' is used before its declaration [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/Game2022fallTemplate.v:121]
+WARNING: [Synth 8-6901] identifier 'increment_score' is used before its declaration [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/Game2022fallTemplate.v:124]
+WARNING: [Synth 8-6901] identifier 'increment_score' is used before its declaration [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/Game2022fallTemplate.v:135]
+WARNING: [Synth 8-6901] identifier 'increment_score' is used before its declaration [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/Game2022fallTemplate.v:146]
+WARNING: [Synth 8-2507] parameter declaration becomes local in UniversalCounter2022fall with formal parameter declaration list [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v:14]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 790.324 ; gain = 239.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PongGame2022fallTemplate' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/PongGame2022fallTemplate.v:15]
+	Parameter NumberofPixels bound to: 10'b1010000000 
+	Parameter NumberofLines bound to: 10'b0111100000 
+	Parameter SystemClock bound to: 10'b0001100100 
+	Parameter CRTClock bound to: 10'b0000011001 
+INFO: [Synth 8-6157] synthesizing module 'CRTcontroller2022fall' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v:17]
+	Parameter ResolutionSize bound to: 10 - type: integer 
+	Parameter SystemClockSize bound to: 10 - type: integer 
+	Parameter vSynchPulse bound to: 10'b0000000010 
+	Parameter vFrontPorch bound to: 10'b0000001010 
+	Parameter vBackPorch bound to: 10'b0000011101 
+	Parameter hSynchPulse bound to: 10'b0001011111 
+	Parameter hFrontPorch bound to: 10'b0000011001 
+	Parameter hBackPorch bound to: 10'b0000101000 
+INFO: [Synth 8-6157] synthesizing module 'hsyncModule2022fall' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/hsyncModule2022fall.v:13]
+	Parameter xresolution bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FallingEdgePositiveOneShot' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/FallingEdgePositiveOneShot.v:7]
+	Parameter Initial bound to: 0 - type: integer 
+	Parameter OneShotState bound to: 1 - type: integer 
+	Parameter IdleState bound to: 2 - type: integer 
+	Parameter WaitState bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FallingEdgePositiveOneShot' (1#1) [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/FallingEdgePositiveOneShot.v:7]
+INFO: [Synth 8-6157] synthesizing module 'UniversalCounter2022fall' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v:7]
+	Parameter length bound to: 10 - type: integer 
+	Parameter HOLD bound to: 2'b00 
+	Parameter UP bound to: 2'b01 
+	Parameter DOWN bound to: 2'b10 
+	Parameter LOAD bound to: 2'b11 
+WARNING: [Synth 8-5788] Register count_value_reg in module UniversalCounter2022fall is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'UniversalCounter2022fall' (2#1) [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/UniversalCounter2022fall.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'hsyncModule2022fall' (3#1) [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/hsyncModule2022fall.v:13]
+INFO: [Synth 8-6157] synthesizing module 'vsyncModule2022fallTemplate' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/vsyncModule2022fallTemplate.v:12]
+	Parameter yresolution bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vsyncModule2022fallTemplate' (4#1) [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/vsyncModule2022fallTemplate.v:12]
+INFO: [Synth 8-6157] synthesizing module 'CRTClock2022fallTemplate' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTClock2022Template.v:12]
+	Parameter SystemClockSize bound to: 10 - type: integer 
+WARNING: [Synth 8-689] width (32) of port connection 'EndCount' does not match port width (10) of module 'UniversalCounter2022fall' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTClock2022Template.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CRTClock2022fallTemplate' (5#1) [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTClock2022Template.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'CRTcontroller2022fall' (6#1) [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/CRTcontroller2022fall.v:17]
+INFO: [Synth 8-6157] synthesizing module 'game2022fallTemplate' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/Game2022fallTemplate.v:17]
+INFO: [Synth 8-6157] synthesizing module 'scoreCounter' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/new/scoreCounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PositiveClockedOneShot' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/new/PositiveClockedOneShot.v:7]
+	Parameter InitialState bound to: 0 - type: integer 
+	Parameter OneShotState bound to: 1 - type: integer 
+	Parameter UnusedState bound to: 2 - type: integer 
+	Parameter WaitState bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PositiveClockedOneShot' (7#1) [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/new/PositiveClockedOneShot.v:7]
+WARNING: [Synth 8-689] width (4) of port connection 'count_value' does not match port width (10) of module 'UniversalCounter2022fall' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/new/scoreCounter.v:37]
+WARNING: [Synth 8-689] width (4) of port connection 'count_value' does not match port width (10) of module 'UniversalCounter2022fall' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/new/scoreCounter.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'scoreCounter' (8#1) [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/new/scoreCounter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'game2022fallTemplate' (9#1) [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/Game2022fallTemplate.v:17]
+INFO: [Synth 8-6157] synthesizing module 'VGA7SegDisplay' [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/vga_sources2022/VGA7SegDisplay_Karl_Reese_fall2019.v:14]
+	Parameter DIGIT_WIDTH bound to: 10'b0000010100 
+	Parameter DIGIT_HEIGHT bound to: 10'b0000011100 
+	Parameter LINE_WIDTH bound to: 10'b0000000100 
+INFO: [Synth 8-6155] done synthesizing module 'VGA7SegDisplay' (10#1) [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/vga_sources2022/VGA7SegDisplay_Karl_Reese_fall2019.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'PongGame2022fallTemplate' (11#1) [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/sources_1/imports/Term Project SourceFiles Folder/PongGame2022fallTemplate.v:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 839.328 ; gain = 288.051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 839.328 ; gain = 288.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 839.328 ; gain = 288.051
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 839.328 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/constrs_1/imports/new/pongPhase2_LJB_ICW.xdc]
+Finished Parsing XDC File [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/constrs_1/imports/new/pongPhase2_LJB_ICW.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.srcs/constrs_1/imports/new/pongPhase2_LJB_ICW.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PongGame2022fallTemplate_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PongGame2022fallTemplate_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 956.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 956.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 956.242 ; gain = 404.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 956.242 ; gain = 404.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 956.242 ; gain = 404.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 956.242 ; gain = 404.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 18    
+	   2 Input     10 Bit       Adders := 26    
+	   4 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 6     
+	                9 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 21    
+	   4 Input     10 Bit        Muxes := 5     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FallingEdgePositiveOneShot 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module UniversalCounter2022fall 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module hsyncModule2022fall 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   4 Input     10 Bit       Adders := 1     
+Module vsyncModule2022fallTemplate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   4 Input     10 Bit       Adders := 1     
+Module CRTClock2022fallTemplate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module PositiveClockedOneShot 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module game2022fallTemplate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+Module VGA7SegDisplay 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 8     
+	   2 Input     10 Bit       Adders := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gameUnit/p_0_out_inferred /\gameUnit/paddlePosition_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 956.242 ; gain = 404.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 956.242 ; gain = 404.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 956.242 ; gain = 404.965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 966.535 ; gain = 415.258
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 971.355 ; gain = 420.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 971.355 ; gain = 420.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 971.355 ; gain = 420.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 971.355 ; gain = 420.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 971.355 ; gain = 420.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 971.355 ; gain = 420.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    36|
+|3     |LUT1   |    10|
+|4     |LUT2   |   125|
+|5     |LUT3   |    45|
+|6     |LUT4   |    63|
+|7     |LUT5   |    55|
+|8     |LUT6   |   117|
+|9     |FDCE   |    72|
+|10    |FDPE   |    21|
+|11    |FDRE   |     4|
+|12    |IBUF   |     4|
+|13    |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------------+-----------------------------+------+
+|      |Instance                |Module                       |Cells |
++------+------------------------+-----------------------------+------+
+|1     |top                     |                             |   567|
+|2     |  VGAdisplay            |CRTcontroller2022fall        |   302|
+|3     |    CRTclockUnit        |CRTClock2022fallTemplate     |    35|
+|4     |      pixelClockCounter |UniversalCounter2022fall_5   |    33|
+|5     |    hsyncModule         |hsyncModule2022fall          |   127|
+|6     |      PixelClockUnit    |FallingEdgePositiveOneShot_3 |     6|
+|7     |      XPositionCounter  |UniversalCounter2022fall_4   |   116|
+|8     |    vsyncModule         |vsyncModule2022fallTemplate  |   140|
+|9     |      LineEndUnit       |FallingEdgePositiveOneShot   |     6|
+|10    |      YPositionCounter  |UniversalCounter2022fall_2   |   129|
+|11    |  gameUnit              |game2022fallTemplate         |   246|
+|12    |    scoreCounter        |scoreCounter                 |    62|
+|13    |      incOneShot        |PositiveClockedOneShot       |     8|
+|14    |      missedOneShot     |PositiveClockedOneShot_0     |     6|
+|15    |      onesCounter       |UniversalCounter2022fall     |    30|
+|16    |      tensCounter       |UniversalCounter2022fall_1   |    18|
++------+------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 971.355 ; gain = 420.078
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 971.355 ; gain = 303.164
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 971.355 ; gain = 420.078
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 983.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 983.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 983.438 ; gain = 685.180
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 983.438 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wilsonic/Documents/classes 2022/fall 2022/ece433/ece433-final-project/VerilogPongGame/PongGamefall2022Phase4_LJB_ICW/PongGamefall2022Phase4_LJB_ICW.runs/synth_1/PongGame2022fallTemplate.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PongGame2022fallTemplate_utilization_synth.rpt -pb PongGame2022fallTemplate_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  7 10:57:14 2022...
